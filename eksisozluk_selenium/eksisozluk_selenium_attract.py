@@ -23,9 +23,9 @@ while pageCount <=10:
 with open("entries.txt","w",encoding="UTF-8") as file:
 	
 	for i in entries:
-		file.write(str(pageCount) + ".\n" + i + "\n")
+		file.write(str(entryCount) + ".\n" + i + "\n")
 		file.write(75*("*") +"\n")
-		pageCount += 1
+		entryCount += 1
 		
 		
 	
