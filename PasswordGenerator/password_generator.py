@@ -86,7 +86,7 @@ class PassGenerator():
 
     def save(self):
        
-        with open(self.file_name, "w") as file:
+        with open(self.file_name, "a") as file:
             json.dump(self.mypasslist, file)
 
     def generate_pass(self, length):
